@@ -1,127 +1,103 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Boostrap Starter Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Module 3 Solution</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<a href="index.html">
+							<h1>Food, LLC</h1>
+						</a>
+					</div>
 
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <div class="navbar-brand">
-            <a href="index.html">Food, LLC</a>
-          </div>
-          
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-        </div>
-        
-      </div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+					 aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-      <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
-           <li>
-             <a href="#section-1">Chicken</a>
-           </li>
-           <li>
-             <a href="#section-2">Beaf</a>
-           </li>
-           <li>
-             <a href="#section-3">Sushi</a>
-           </li>
-         </ul><!-- #nav-list -->
-       </div><!-- .collapse .navbar-collapse -->
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+					<ul id="nav-list" class="nav navbar-nav visible-xs">
+						<li><a href="#chicken" class="text-center">Chicken</a></li>
+						<li><a href="#beef" class="text-center">Beef</a></li>
+						<li><a href="#sushi" class="text-center">Sushi</a></li>
+					</ul>
+				</div><!-- .collapse .navbar-collapse -->
+			</div><!-- .container -->
+		</nav><!-- #header-nav -->
+	</header>
 
-      
-    </nav>
-  </header>
-  
-  <div>
-      <h2 id="page-heading" class="text-center">Our Menu</h2>
-  </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <section id="section-1">
-              <h3 class="text-center">Chicken</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum varius turpis non fermentum. Nunc sit amet mollis quam. 
-                Duis eros magna, vulputate sed egestas ac, tristique sed metus. Vivamus urna orci, ultrices vel volutpat eu, ultricies ut sapien. 
-                Sed vestibulum sodales dui, eu consectetur arcu rutrum vitae. Suspendisse potenti. Donec auctor elit mi, ac consectetur justo maximus nec.
-                Praesent nec sollicitudin mauris. Nullam sed semper sem. Ut bibendum felis at augue convallis dignissim.
-                Vivamus vitae justo semper dui dapibus ultricies quis ac arcu. Sed et massa venenatis, dapibus mauris a, euismod leo. 
-                Aliquam ac consectetur massa. Morbi quis felis at augue pulvinar vestibulum id vel est. Curabitur nec velit elit. 
-                Etiam at orci semper, blandit dolor non, volutpat arcu. Vestibulum vestibulum, eros et semper gravida, nunc neque maximus sapien, 
-                nec malesuada magna turpis et lacus. Fusce condimentum mauris nec nisi viverra, id venenatis ligula lacinia. 
-                Nulla condimentum pharetra eros, eget ultrices arcu semper vel. Phasellus varius metus non maximus sollicitudin. 
-                Duis venenatis neque in erat condimentum, hendrerit sagittis nulla feugiat. Etiam at rhoncus mauris. Cras nec leo id magna feugiat gravida. 
-                Phasellus commodo enim in ligula venenatis hendrerit. 
-                Morbi luctus non urna eu aliquam. Etiam vel urna cursus, fermentum quam ut, aliquet nulla.
+	<div id="main-content" class="container">
+		<h2 id="page-title" class="text-center">Our Menu</h2>
+		<section class="row">
+			<div id="main-text" class="col-xs-12">
+				<div class="text-background">
+					<h3 id="chicken">Chicken</h3>
+					<p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum varius turpis non fermentum. Nunc sit amet mollis quam. 
+                        Duis eros magna, vulputate sed egestas ac, tristique sed metus. Vivamus urna orci, ultrices vel volutpat eu, ultricies ut sapien. 
+                        Sed vestibulum sodales dui, eu consectetur arcu rutrum vitae. Suspendisse potenti. Donec auctor elit mi, ac consectetur justo maximus nec.
+                        Praesent nec sollicitudin mauris. Nullam sed semper sem. Ut bibendum felis at augue convallis dignissim.
+                        Vivamus vitae justo semper dui dapibus ultricies quis ac arcu. Sed et massa venenatis, dapibus mauris a, euismod leo. 
+                        Aliquam ac consectetur massa. Morbi quis felis at augue pulvinar vestibulum id vel est. Curabitur nec velit elit. 
+                        Etiam at orci semper, blandit dolor non, volutpat arcu. Vestibulum vestibulum, eros et semper gravida, nunc neque maximus sapien, 
+                        nec malesuada magna turpis et lacus. Fusce condimentum mauris nec nisi viverra, id venenatis ligula lacinia. 
+                        Nulla condimentum pharetra eros, eget ultrices arcu semper vel. Phasellus varius metus non maximus sollicitudin. 
+                        Duis venenatis neque in erat condimentum, hendrerit sagittis nulla feugiat. Etiam at rhoncus mauris. Cras nec leo id magna feugiat gravida. 
+                        Phasellus commodo enim in ligula venenatis hendrerit. 
+                        Morbi luctus non urna eu aliquam. Etiam vel urna cursus, fermentum quam ut, aliquet nulla.
+					</p>
+					<h3 id="beef">Beef</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum varius turpis non fermentum. Nunc sit amet mollis quam. 
+                        Duis eros magna, vulputate sed egestas ac, tristique sed metus. Vivamus urna orci, ultrices vel volutpat eu, ultricies ut sapien. 
+                        Sed vestibulum sodales dui, eu consectetur arcu rutrum vitae. Suspendisse potenti. Donec auctor elit mi, ac consectetur justo maximus nec.
+                        Praesent nec sollicitudin mauris. Nullam sed semper sem. Ut bibendum felis at augue convallis dignissim.
+                        Vivamus vitae justo semper dui dapibus ultricies quis ac arcu. Sed et massa venenatis, dapibus mauris a, euismod leo. 
+                        Aliquam ac consectetur massa. Morbi quis felis at augue pulvinar vestibulum id vel est. Curabitur nec velit elit. 
+                        Etiam at orci semper, blandit dolor non, volutpat arcu. Vestibulum vestibulum, eros et semper gravida, nunc neque maximus sapien, 
+                        nec malesuada magna turpis et lacus. Fusce condimentum mauris nec nisi viverra, id venenatis ligula lacinia. 
+                        Nulla condimentum pharetra eros, eget ultrices arcu semper vel. Phasellus varius metus non maximus sollicitudin. 
+                        Duis venenatis neque in erat condimentum, hendrerit sagittis nulla feugiat. Etiam at rhoncus mauris. Cras nec leo id magna feugiat gravida. 
+                        Phasellus commodo enim in ligula venenatis hendrerit. 
+                        Morbi luctus non urna eu aliquam. Etiam vel urna cursus, fermentum quam ut, aliquet nulla.
+					</p>
+					<h3 id="sushi">Sushi</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum varius turpis non fermentum. Nunc sit amet mollis quam. 
+                        Duis eros magna, vulputate sed egestas ac, tristique sed metus. Vivamus urna orci, ultrices vel volutpat eu, ultricies ut sapien. 
+                        Sed vestibulum sodales dui, eu consectetur arcu rutrum vitae. Suspendisse potenti. Donec auctor elit mi, ac consectetur justo maximus nec.
+                        Praesent nec sollicitudin mauris. Nullam sed semper sem. Ut bibendum felis at augue convallis dignissim.
+                        Vivamus vitae justo semper dui dapibus ultricies quis ac arcu. Sed et massa venenatis, dapibus mauris a, euismod leo. 
+                        Aliquam ac consectetur massa. Morbi quis felis at augue pulvinar vestibulum id vel est. Curabitur nec velit elit. 
+                        Etiam at orci semper, blandit dolor non, volutpat arcu. Vestibulum vestibulum, eros et semper gravida, nunc neque maximus sapien, 
+                        nec malesuada magna turpis et lacus. Fusce condimentum mauris nec nisi viverra, id venenatis ligula lacinia. 
+                        Nulla condimentum pharetra eros, eget ultrices arcu semper vel. Phasellus varius metus non maximus sollicitudin. 
+                        Duis venenatis neque in erat condimentum, hendrerit sagittis nulla feugiat. Etiam at rhoncus mauris. Cras nec leo id magna feugiat gravida. 
+                        Phasellus commodo enim in ligula venenatis hendrerit. 
+                        Morbi luctus non urna eu aliquam. Etiam vel urna cursus, fermentum quam ut, aliquet nulla.
+					</p>
+				</div>
+			</div>
+		</section>
+	</div>
 
-                  <br>(End of Chicken section)<a href="#top"> Back To Top</a>
-                </p>
-          </section>
-            
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <section id="section-2">
-              <h3 class="text-center">Beef</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum varius turpis non fermentum. Nunc sit amet mollis quam. 
-                Duis eros magna, vulputate sed egestas ac, tristique sed metus. Vivamus urna orci, ultrices vel volutpat eu, ultricies ut sapien. 
-                Sed vestibulum sodales dui, eu consectetur arcu rutrum vitae. Suspendisse potenti. Donec auctor elit mi, ac consectetur justo maximus nec.
-                Praesent nec sollicitudin mauris. Nullam sed semper sem. Ut bibendum felis at augue convallis dignissim.
-                Vivamus vitae justo semper dui dapibus ultricies quis ac arcu. Sed et massa venenatis, dapibus mauris a, euismod leo. 
-                Aliquam ac consectetur massa. Morbi quis felis at augue pulvinar vestibulum id vel est. Curabitur nec velit elit. 
-                Etiam at orci semper, blandit dolor non, volutpat arcu. Vestibulum vestibulum, eros et semper gravida, nunc neque maximus sapien, 
-                nec malesuada magna turpis et lacus. Fusce condimentum mauris nec nisi viverra, id venenatis ligula lacinia. 
-                Nulla condimentum pharetra eros, eget ultrices arcu semper vel. Phasellus varius metus non maximus sollicitudin. 
-                Duis venenatis neque in erat condimentum, hendrerit sagittis nulla feugiat. Etiam at rhoncus mauris. Cras nec leo id magna feugiat gravida. 
-                Phasellus commodo enim in ligula venenatis hendrerit. 
-                Morbi luctus non urna eu aliquam. Etiam vel urna cursus, fermentum quam ut, aliquet nulla.
-                  <br>(End of Beef section)<a href="#top"> Back To Top</a>
-                </p>
-          </section>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4">
-          <section id="section-3">
-              <h3 class="text-center">Sushi</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum varius turpis non fermentum. Nunc sit amet mollis quam. 
-                Duis eros magna, vulputate sed egestas ac, tristique sed metus. Vivamus urna orci, ultrices vel volutpat eu, ultricies ut sapien. 
-                Sed vestibulum sodales dui, eu consectetur arcu rutrum vitae. Suspendisse potenti. Donec auctor elit mi, ac consectetur justo maximus nec.
-                Praesent nec sollicitudin mauris. Nullam sed semper sem. Ut bibendum felis at augue convallis dignissim.
-                Vivamus vitae justo semper dui dapibus ultricies quis ac arcu. Sed et massa venenatis, dapibus mauris a, euismod leo. 
-                Aliquam ac consectetur massa. Morbi quis felis at augue pulvinar vestibulum id vel est. Curabitur nec velit elit. 
-                Etiam at orci semper, blandit dolor non, volutpat arcu. Vestibulum vestibulum, eros et semper gravida, nunc neque maximus sapien, 
-                nec malesuada magna turpis et lacus. Fusce condimentum mauris nec nisi viverra, id venenatis ligula lacinia. 
-                Nulla condimentum pharetra eros, eget ultrices arcu semper vel. Phasellus varius metus non maximus sollicitudin. 
-                Duis venenatis neque in erat condimentum, hendrerit sagittis nulla feugiat. Etiam at rhoncus mauris. Cras nec leo id magna feugiat gravida. 
-                Phasellus commodo enim in ligula venenatis hendrerit. 
-                Morbi luctus non urna eu aliquam. Etiam vel urna cursus, fermentum quam ut, aliquet nulla.
-                  <br>(End of Sushi section)<a href="#top"> Back To Top</a>
-                </p>
-          </section>
-        </div>
-
-          
-      </div>
-    </div>
-
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+	 <!-- jQuery (Bootstrap JS plugins depend on it) -->
+     <script src="js/jquery-3.5.1.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/script.js"></script>
 </body>
+
 </html>
